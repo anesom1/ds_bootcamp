@@ -1,8 +1,8 @@
-from student import Student
+from student import StudentManager
 
 def open_menu():
 
-    student = Student("" , "", "")
+    student = StudentManager()
 
     while True:
         print("Menu:")
@@ -27,4 +27,10 @@ def open_menu():
             student.list_students()
 
         elif option == "5":
+            print("Good bye!")
             break
+
+        else:
+            print("Error: Select the number from 1 to 5.")
+
+
